@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .7rem;
+    justify-content: space-between;
+}
+.header .mainname{
+    padding: .5rem;
+    font-size: 1.7rem;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: .5rem;
+    width: 30rem;
+}
+
+.logintext,.loginpass{
+    padding: .8rem;
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: transparent;
+    background-color: #fff;
+    width: 9rem;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    
+}
+
+.loginbtn{
+    padding: .8rem;
+    border-radius: .3rem;
+    border: none;
+    outline: transparent;
+    width: 9rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.loginbtn:hover{
+    background: #fff;
+    color: #ff4b1f;
+    transition: all 0.5s ease-in-out;
+}
+
+.main{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: .5rem;
+    min-width: 40rem;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-height: 40rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.result{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.markdetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: .5rem auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.mainsubwrapper{
+    margin: .6rem 0;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.alldetails{
+    padding: 1rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.summarywrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1.3rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pass{
+    color: #00ff00;
+
+}
+
+.fail{
+    color: crimson;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 540px){
+    .main{
+        min-width: 85%;
+        top: 70%;
+    }
+    .header{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .username{
+        margin: auto;
+    }
+
+    .userdiv{
+        transform: rotate(0);
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        /* transform: translate(-50%,-50%); */
+        padding: .5rem;
+        /* margin: auto; */
+    }
+
+    .usernameshow{
+        font-size: 1.8rem;
+    }
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .6rem auto;
+    padding: .7rem;
+
+}
+
+.userdiv{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+    transform: rotate(-90deg);
+}
+
+.usernameshow{
+    font-size: 5rem;
+    padding: .5rem;
+    text-transform: uppercase;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
